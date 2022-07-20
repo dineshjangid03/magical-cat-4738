@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Favoritfreshly,sans-serif;
+}
+nav{
+    background-color: #fffdf7;
+    padding: 20px 40px;
+}
+.nav_main{
+    display: flex;
+    justify-content: space-between;
+}
+.logo_img{
+    width: 107px;
+    height: 24px;
+}
+.tdn{
+    text-decoration: none;  
+}
+.nav_main2>a{
+    color: #333;
+    font-size: .875rem;
+    line-height: 1.43em;
+    font-weight: bold;
+    padding:15px;
+}
+.tdn~.sgn_btn{
+    background-color: #3167ff;
+    color: white;
+    padding: 10px;
+}
+.box1{
+    width: 99%;
+    background-image: url("https://uploads-ssl.webflow.com/5d03b4e130118314af624b20/62aa50d46eadd67c1b7ca2df_Freshly_SpringMarketing_C141139-Edit%20(1)%20(2).jpg");
+    background-repeat:no-repeat;
+    background-size: 60%;
+    display: flex;
+}
+.box11{
+    width: 60%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.462));
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.box11>div{
+    width: 300px;
+}
+.box11>div>h2{
+    color: white;
+    margin: 0 40px 40px 0;
+    font-size: 30px;
+}
+.box12{
+    width: 40%;
+    background-color: #85e5c6;
+    padding: 40px;
+    text-align: right;
+}
+.box12>h1{
+    font-size: 64px;  
+    margin-top: 25px;
+}
+.box121{
+    margin-top: 50px;
+}
+.box121>button{
+    padding: 10px 30px;
+}
+.box121>button:nth-child(1){
+    background-color: white;
+    color: #3167ff;
+    border: 2px solid #3167ff;
+    font-weight: bold;
+}
+.box121>button:nth-child(2){
+    color: white;
+    background-color: #3167ff;
+    border: 2px solid #3167ff;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.colorb{
+    color: #3167ff;
+}
+.box122>p{
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}

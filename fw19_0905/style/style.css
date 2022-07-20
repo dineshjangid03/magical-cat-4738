@@ -1,4 +1,27 @@
-*{
+/* --------------------universal css-------------------- */
+html, body {
+    margin: 0;
+    height: 100%;
+  }
+  
+  * {
+    font-family: "Raleway";
+    box-sizing: border-box;
+    font-family: Favoritfreshly,sans-serif;
+  }
+
+
+
+
+
+
+
+
+
+
+
+/* --------style for nav without hamburger----------- */
+/* *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -7,6 +30,8 @@
 nav{
     background-color: #fffdf7;
     padding: 20px 40px;
+    position: sticky;
+    top: 0;
 }
 .nav_main{
     display: flex;
@@ -30,12 +55,27 @@ nav{
     background-color: #3167ff;
     color: white;
     padding: 10px;
-}
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------style for box 1----------------------- */
+/* ------------------style for box 1----------------------- */
 .box1{
-    width: 99%;
+    width: 100%;
     background-image: url("https://uploads-ssl.webflow.com/5d03b4e130118314af624b20/62aa50d46eadd67c1b7ca2df_Freshly_SpringMarketing_C141139-Edit%20(1)%20(2).jpg");
-    background-repeat:no-repeat;
-    background-size: 60%;
+    /* background-repeat:no-repeat; */
+    /* background-size: 60%; */
     display: flex;
 }
 .box11{
@@ -91,3 +131,79 @@ nav{
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
+
+
+
+
+
+
+
+/* ------------------------style for box 2----------------------------- */
+/* ------------------------style for box 2----------------------------- */
+.box1,.box2{
+    border: 0.1px solid transparent;
+}
+.box2{
+    background-color: #fef9eb;
+    width: 100%;
+    margin: auto;
+    /* height: 400px; */
+}
+.box2_heading{
+    text-align: center;
+    font-size: 48px;
+    color: #303030;
+}
+.box21{
+    border: 1px solid;
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+}
+.box21>div{
+    border: 1px solid;
+    height: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------media query for whole page-------------------------*/
+/* --------------------media query for whole page-------------------------*/
+@media (max-width: 878px) {
+    .box1{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .box1>div{
+      width: 100%;
+    }
+    .box12>h1{
+        font-size: 30px;
+    }
+    .box121>button{
+        font-size: 14px;
+        padding: 5px 15px;
+        margin-top: 15px;
+    }
+    .box11>div>h2{
+        margin-top: 30px;
+    }
+  }
+  @media (max-width: 985px){
+    .box121>button{
+        font-size: 14px;
+        padding: 5px 15px;
+        margin-top: 15px;
+    }
+  }

@@ -1,6 +1,6 @@
 // <!-- Section 2 Starts here  -->
 let section2 = [
-    { image : 'https://assets-global.website-files.com/5d03b4e130118314af624b20/6192cc9d75bbb20e8074e602_Rectangle%20108.jpg', dsc: '4-5 Meals', dis : ' ' },
+    { image : 'https://assets-global.website-files.com/5d03b4e130118314af624b20/6192cc9d75bbb20e8074e602_Rectangle%20108.jpg', dsc: '4-5 Meals', dis : null },
     { image : 'https://assets-global.website-files.com/5d03b4e130118314af624b20/6192cc9d5fc8ef6e6127d841_Rectangle%20108-1.jpg', dsc : '6-7 Meals', dis : 'Save up to $12'},
     { image : 'https://assets-global.website-files.com/5d03b4e130118314af624b20/6192cc9c24f1e287b2ea6a19_Rectangle%20108-2.jpg', dsc : '8-9 Meals', dis : 'Save up to $20'},
     { image : 'https://assets-global.website-files.com/5d03b4e130118314af624b20/6192cc9d58c6a6a96a2ad5ef_Rectangle%20108-3.jpg', dsc : '10-11 Meals', dis : 'Save up to $27'},

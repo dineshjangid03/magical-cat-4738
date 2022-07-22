@@ -12,9 +12,9 @@
     <div id="signup">
     <h1>Dinner's Ready!</h1>
     <h2>Chef-prepared, healthy meals delivered weekly</h2>
-    <input type="email" id="email" placeholder="Email">
-    <input type="password" id="zip" placeholder="Zip">
-    <button id="signupbutton">Continue</button>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Zip" required>
+    <button id="signupbutton" onclick="storedata()" >Continue</button>
     <p>Already have an account?<a href="./login.html">Log in</a></p>
     <p>By continuing, you agree to our <a href="">Team</a> and <a href="">Privacy Policy</a> & will receive emails from Freshly.</p>
 </div>
@@ -131,5 +131,32 @@
        des.style.display="none"; 
         }
     }
-    
+  let arrdata=JSON.parse(localStorage.getItem("signup"))||[]; 
+  function storedata(){
+      let objdata={
+          email:document.querySelector("#email").value,
+          password:document.querySelector("#password").value
+        }
+        if(check(objdata.email)===true){
+        arrdata.push(objdata);
+        alert("👍👍Signup Successfull👍👍");
+        localStorage.setItem("signup",JSON.stringify(arrdata))
+        window.location.href="login.html"
+    }
+    else{
+        alert("😥😥Email Already Registered😥😥");
+    }
+  }
+
+  function check(email){
+    let filter=arrdata.filter(function(elem){
+        return email==elem.email;
+    })
+   if(filter.length>0){
+    return false
+   }
+else{
+    return true;
+}
+  }
 </script>

@@ -106,6 +106,7 @@
   nav{
     position: sticky;
     top: 0;
+    z-index: 99;
   }
   /* -----------------------------------media query for nav bar--------------------------------- */
   /* -----------------------------------media query for nav bar--------------------------------- */
@@ -225,21 +226,6 @@
     color: #357471;
     text-align: center;
     font-size: 27px;
-}
-
-.dis{
-    padding: 2px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    font-size: 14px;
-    position: absolute;
-    display: inline-block;
-    top:300px;
-    margin-left: 10px;
-    background-color: #85e5c6;
-    border-radius: 5px;
-    overflow-y: hidden;
 }
 
 #section2>div:last-child{

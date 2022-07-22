@@ -12,70 +12,15 @@ html, body {
   }
 
 
-
-
-
-
-
-
-
-
-
-/* --------style for nav without hamburger----------- */
-/* *{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: Favoritfreshly,sans-serif;
-}
-nav{
-    background-color: #fffdf7;
-    padding: 20px 40px;
-    position: sticky;
-    top: 0;
-}
-.nav_main{
-    display: flex;
-    justify-content: space-between;
-}
-.logo_img{
-    width: 107px;
-    height: 24px;
-}
-.tdn{
-    text-decoration: none;  
-}
-.nav_main2>a{
-    color: #333;
-    font-size: .875rem;
-    line-height: 1.43em;
-    font-weight: bold;
-    padding:15px;
-}
-.tdn~.sgn_btn{
-    background-color: #3167ff;
-    color: white;
-    padding: 10px;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ------------------style for box 1----------------------- */
 /* ------------------style for box 1----------------------- */
 .box1{
+    margin-top: 70px;
     width: 100%;
     background-image: url("https://uploads-ssl.webflow.com/5d03b4e130118314af624b20/62aa50d46eadd67c1b7ca2df_Freshly_SpringMarketing_C141139-Edit%20(1)%20(2).jpg");
     display: flex;
+    background-size: 60%;
+    background-repeat: no-repeat;
 }
 .box11{
     width: 60%;
@@ -222,12 +167,22 @@ nav{
     margin-top: 15px;
     height: 180px;
     width: 210px;
+    overflow: hidden;
+    border-radius: 16px;
+}
+.box311>div:hover{
+    cursor: pointer;
 }
 .box311>div>div>img{
     height: 180px;
     width: 100%;
     border-radius: 16px;
     object-fit: cover;
+}
+.box311>div>div>img:hover{
+    transform: scale(1.1);
+    transition: 1500ms;
+    border-radius: 16px;
 }
 .box311>div>h3{
     width: 210px;
@@ -251,6 +206,7 @@ nav{
     position:fixed;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 .box32a{
     width: 50%;
@@ -304,6 +260,7 @@ nav{
 
 .box4{
     background-color: #fffdf7;
+    margin-bottom: 0;
 }
 .box41{
     border: 1px solid transparent;
@@ -404,6 +361,175 @@ nav{
 
 
 
+/* --------------------------style for box 5---------------------- */
+/* --------------------------style for box 5---------------------- */
+.box5{
+    background-color: #fffdf7;
+    margin-top: 0;
+    border: 1px solid transparent;
+}
+.box51{
+    text-align: center;
+    font-size: 22px;
+    padding-top: 50px;
+}
+.box51>h1{
+    margin-top: 30px;
+}
+.box52{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    gap: 50px;
+    text-align: center;
+    color: #333;
+    line-height: 1.43em;
+    padding-bottom: 60px;
+}
+.box52>div>img{
+    width: 50%;
+    margin: auto;
+}
+
+
+
+
+/* --------------------------style for box 6---------------------- */
+/* --------------------------style for box 6---------------------- */
+.box6{
+    padding: 40px;
+    width: 100%;
+    margin: auto;
+}
+.box61{
+    color: #333;
+    width: 100%;
+    margin: auto;
+    height: 708px;
+    background-repeat: no-repeat;
+    background-image: url("https://assets-global.website-files.com/5d03b4e130118314af624b20/61f1275059fd961964f53287_22_Homepage_EatingBetterEasy_BG_866x708.jpg");
+    background-size: 60%;
+    background-position: 100% 50%;
+}
+.box611{
+    width: 52%;
+    padding: 46px;
+    position:relative;
+    left: 0;
+    top: 22%;
+    background-color: white;
+}
+.box611>button{
+    border: 0px;
+    padding: 10px 12px;
+    width: 150px;
+    margin: auto;
+    background-color: #3167ff;
+    color: white;
+    font-size: 18px;
+    word-spacing: .5px;
+}
+ .box611>button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.box611>h1{
+    font-size: 45px;
+}
+
+
+
+
+
+
+
+
+/* --------------------------style for box 7---------------------- */
+/* --------------------------style for box 7---------------------- */
+.box7{
+    color: #333;
+    padding: 40px;
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+}
+.box71{
+    width: 100%;
+    margin: auto;
+    height: 708px;
+    background-repeat: no-repeat;
+    background-image: url("https://assets-global.website-files.com/5d03b4e130118314af624b20/61f1274f0c096f517bb89ed5_22_Homepage_HealthyMealsDelivered_866x708.jpg");
+    background-size: 60%;
+}
+.box711{
+    width: 52%;
+    padding: 46px;
+    position:relative;
+    left: 48%;
+    top: 20%;
+    background-color: white;
+}
+.box711>h1{
+    font-size: 45px;
+    margin-top: 0;
+
+}
+.box711>input{
+    height: 48px;
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 13px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-size: 18px;
+
+}
+.box711>button{
+    background-color: #3167ff;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.33em;
+    letter-spacing: .5px;
+    border: #3167ff;
+    padding: 10px 22%;
+    margin-bottom: 20px;
+}
+.box711>button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.box711>p{
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+/* --------------------------style for box 8---------------------- */
+/* --------------------------style for box 8---------------------- */
+.box8{
+    background-color: #f7f7f7;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
+}
+.box8>div{
+    padding: 32px 24px;
+    display: flex;
+    justify-content: center;
+}
+.box8>div>img{
+    max-width: 190px;
+}
+
+
 
 
 
@@ -414,10 +540,21 @@ nav{
 
 /* --------------------media query for whole page-------------------------*/
 /* --------------------media query for whole page-------------------------*/
+@media (max-width: 475px) {
+    .box611>h1,.box711>h1{
+        font-size: 25px
+    }
+    
+}
+
+
+
 @media (max-width: 878px) {
     .box1{
       display: flex;
       flex-direction: column-reverse;
+      background-size: 100%;
+      background-repeat: repeat;
     }
     .box1>div{
       width: 100%;
@@ -436,10 +573,19 @@ nav{
     .box32a{
         width: 90%;
     }
+    .box611,.box711{
+        top: 15%;
+    }
+    .box611>h1,.box711>h1{
+        font-size: 35px
+    }
   }
 
 
   @media (max-width: 985px){
+    .box1{
+        background-size: 100%;
+    }
     .box121>button{
         font-size: 14px;
         padding: 5px 15px;
@@ -451,4 +597,28 @@ nav{
     .box32a{
         width: 70%;
     }
+    .box61,.box71{
+        background-size: auto;
+        background-position: center;
+        
+    }
+    .box611,.box711{
+        width: 80%;
+        left: auto;
+        right: auto;
+        margin-right: auto;
+        margin-left: auto;
+    }
   }
+
+
+
+  @media (max-width: 1265px){
+    .box1{
+        background-size: 100%;
+    }
+    .box711{
+        top: 5%;
+    }
+}
+

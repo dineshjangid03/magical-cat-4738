@@ -25,15 +25,29 @@ let data2=[
 ]
 
 
+let data3=[
+    {img:"https://assets-global.website-files.com/5d03b4e130118314af624b20/5d96607e740addd99bf570ae_star.svg",h3:"Freshly has changed our lives!",p:"With Freshly, we don’t have to go anywhere or wait for delivery, and our monthly food bill has been cut nearly in half. We love it.",h4:"Dave"},
+    {img:"https://assets-global.website-files.com/5d03b4e130118314af624b20/5d96607e740addd99bf570ae_star.svg",h3:"10 stars! Awesome! Love it!",p:"We love Freshly because it takes two minutes to prepare, the food is great and we don’t have to spend time cleaning up.",h4:"Sheri"},
+    {img:"https://assets-global.website-files.com/5d03b4e130118314af624b20/5d96607e740addd99bf570ae_star.svg",h3:"One of the easiest decisions I've made",p:"With Freshly, I don’t have to think about what I’m going to eat for lunch each day and feel good knowing that I’m eating a healthy meal. I love the convenience!",h4:"Cindi"},
+]
+
+
+let data4=[
+    "https://assets-global.website-files.com/5d03b4e130118314af624b20/5f523e435aee2e3a4ab03e6f_The_Huffington_Post_logo.svg",
+    "https://assets-global.website-files.com/5d03b4e130118314af624b20/5f523e412d98cd166a6c84e6_logo-header.64f3bdc15b1f321829f9f30c7853a1469f469d71.svg",
+    "https://assets-global.website-files.com/5d03b4e130118314af624b20/5f523e436b26e00a240533b1_Entrepreneur-01.svg",
+    "https://assets-global.website-files.com/5d03b4e130118314af624b20/5f523e432759db28ffaf924f_w-g-logo-black.svg",
+    "https://assets-global.website-files.com/5d03b4e130118314af624b20/5f523f552759db186baf93d2_techcrunch-seeklogo.com%20%5BConverted%5D.svg",
+    "https://assets-global.website-files.com/5d03b4e130118314af624b20/5f523e434bbecc1909457f48_logo-header.aeb2e510354d524c42a87c5d0a97d0a73c5d7581.svg",
+]
 
 
 
     displayData(data)
     displayData1(data1)
     displayData2(data2)
-
-
-
+    displayData3(data3)
+    displayData4(data4)
 
 
 
@@ -64,9 +78,6 @@ let data2=[
 
 
 
-
-
-
     function displayData1(data){
         let cont=document.querySelector(".box21")
         data.forEach((el)=>{
@@ -90,10 +101,6 @@ let data2=[
 
 
 
-
-
-
- 
 function displayData2(data){
     let cont=document.querySelector(".box421")
     data.forEach((elem)=>{
@@ -116,9 +123,6 @@ function displayData2(data){
         cont.append(box)
     })
 }
-
-
-
 
 
 
@@ -157,4 +161,26 @@ function displayDetail(el){
 
 
 
+function displayData3(data){
+    let cont=document.querySelector(".box52")
+    data.forEach((el)=>{
+        let div=document.createElement("div")
+        div.innerHTML=`
+        <img src="${el.img}" alt="">
+        <h3>${el.h3}</h3>
+        <p>${el.p}</p>
+        <h4>${el.h4}</h4>`
+        cont.append(div)
+    })
+}
 
+
+
+function displayData4(data){
+    let cont=document.querySelector(".box8")
+    data.forEach((el)=>{
+        let div=document.createElement("div")
+        div.innerHTML=`<img src="${el}" alt="">`
+        cont.append(div)
+    })
+}

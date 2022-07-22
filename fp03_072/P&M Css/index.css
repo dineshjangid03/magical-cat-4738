@@ -548,3 +548,132 @@
       height: 35px;
     }
    /* <!-- Section 8 Ends here Footer  -->  */
+
+   /* Media Quires */
+
+   @media (max-width: 878px){
+
+    #section1{
+      width: 85%;
+    }
+
+    #logo{
+      width: 25%;
+      height: 90%;
+    }
+
+    #section1>h1{
+      font-size: 37px;
+    }
+
+    #section1>div:last-child{
+      font-size: 13px;
+      width: 95%;
+    }
+
+    #section2_data{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      row-gap: 10px;
+    }
+
+    .box{
+      height: 270px;
+      margin: auto;
+    }
+
+    .image{
+      /* border: 1px solid red; */
+      height: 150px;
+      width: 80%;
+      margin-left: 10%;
+    }
+
+    .sec4_img{
+      /* border: 1px solid red; */
+      height: 120px;
+    }
+
+    #section2>div:last-child{
+      width: 90%;
+      margin-top: 25%;
+    }
+
+    #section2>div:last-child>button{
+      width: 100%;
+      margin-left: 0px;
+    }
+
+    #section3{
+      width: 95%;
+    }
+
+    #section3>h1{
+      font-size: 47px;
+    }
+
+    #section4>div:first-child{
+      width: 80%;
+      margin-top: 10px;
+      justify-content: center;
+    }
+
+    #section4_data{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+    }
+
+    #section5>h1{
+      width: 95%;
+      font-size: 42px;
+      text-align: center;
+    }
+
+    #section5>p{
+      width: 80%;
+    }
+
+    #section5_data{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      row-gap: 60px;
+    }
+
+    .imgdiv{
+      width: 40%;
+    }
+
+    .dscdiv{
+      font-size: 16px;
+    }
+
+    #section6>h1{
+      width: 90%;
+      font-size: 35px;
+      /* border: 1px solid red; */
+      text-align: center;
+    }
+
+    #section8_data{
+      width: 99%;
+      grid-template-columns: repeat(2,1fr);
+      gap: 40px;
+      /* border: 1px solid red; */
+    }
+
+    .socail_handles{
+      width: 99%;
+      /* border: 1px solid red; */
+    }
+
+    .AppleStore{
+      width: 50%;
+      margin-left: 5px;
+    }
+
+    .PlayStore{
+      width: 50%;
+      height: 19px;
+      margin-left: 5px;
+    }
+  }

@@ -21,11 +21,7 @@ function appendFun(data){
         dsc.innerText = elem.dsc;
         dsc.setAttribute('class','dsc');
 
-        let dis = document.createElement('p');
-        dis.innerText = elem.dis;
-        dis.setAttribute('class','dis');
-
-        box.append(image,dsc,dis);
+        box.append(image,dsc);
         document.getElementById('section2_data').append(box)
     })
 }

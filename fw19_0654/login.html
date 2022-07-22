@@ -12,10 +12,10 @@
     <div id="login">
     <h1>Log In</h1>
     <h3>Email</h3>
-    <input type="email" id="email" placeholder="Enter Email Address">
+    <input type="email" id="email" placeholder="Enter Email Address" required>
     <h3>Password</h3>
-    <input type="password" id="password" placeholder="Enter Password">
-    <button id="loginbutton"> Log In</button>
+    <input type="password" id="password" placeholder="Enter Password" required>
+    <button id="loginbutton" onclick="logindata()"> Log In</button>
     <div id="bottom">
     <a href="">Forgot Password</a>
     <div>Don't have an account? <a href="./signup.html">Get started</a></div> 
@@ -24,3 +24,30 @@
 </div>
 </body>
 </html>
+<script>
+    let arrdata=JSON.parse(localStorage.getItem("signup"))||[]; 
+    function logindata(){
+        let email=document.querySelector("#email").value;
+        let password=document.querySelector("#password").value;
+        let flag=false;
+          for(let i=0;i<arrdata.length;i++){
+            if(arrdata[i].email===email && arrdata[i].password===password){
+                
+                flag=true;
+              }
+              if(arrdata[i].email===email && arrdata[i].password!==password)
+              {
+                alert("🤦‍♂️🤦‍♂️Wrong Password🤦‍♂️🤦‍♂️");
+              }
+            
+        }
+        if(flag){
+        window.location.href="https://www.freshly.com/"
+        }
+        else{
+                alert("🤦‍♂️🤦‍♂️Wrong Email🤦‍♂️🤦‍♂️"); 
+            }
+      }
+
+    console.log(arrdata)
+</script>

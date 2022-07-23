@@ -196,4 +196,18 @@ function appendSec5(data ){
 }
 
 
+document.querySelector('.AppleStore').addEventListener('click',AppleStore)
 
+function AppleStore( ){
+   window.location.href = 'https://itunes.apple.com/app/apple-store/id1195648107?pt=118497527&ct=WebsiteFooter&mt=8'
+}
+
+document.querySelector('.PlayStore').addEventListener('click',PlayStore);
+
+function PlayStore( ){
+    window.location.href = 'https://play.google.com/store/apps/details?id=com.freshly.meal&utm_source=website&utm_campaign=footer&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'
+}
+
+function  getStarted( ){
+   window.location.href = '/fw19_0654/signup.html'
+}

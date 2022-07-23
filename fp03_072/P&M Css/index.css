@@ -441,7 +441,6 @@
     background-color: white;
   }
 
-
   .content {
     padding: 0 18px;
     display: none;
@@ -455,7 +454,6 @@
     margin-left: 99%;
   }
 
-
   #section7{
     text-align: center;
     margin-top: 5%;
@@ -466,7 +464,7 @@
     color: #333;
     font-weight: 500;
   }
-  #section7>p{
+  #section7>a{
     color: #3167ff;
     text-decoration: underline;
   }
@@ -502,11 +500,14 @@
     #footer_box>p:first-child{
       font-size: 16px;
       color : black
-  
     }
   
     #footer_box>p{
       font-size: 14px;
+    }
+
+    #footer_box>p:hover{
+      cursor: pointer;
     }
   
     #footerlogo{
@@ -532,6 +533,10 @@
     .PlayStore{
       width: 100px;
       height: 35px;
+    }
+
+    .socail_handles>i,.AppleStore, .PlayStore, #footerlogo{
+      cursor: pointer;
     }
    /* <!-- Section 8 Ends here Footer  -->  */
 

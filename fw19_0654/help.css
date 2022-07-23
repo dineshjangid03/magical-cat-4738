@@ -5,7 +5,7 @@ body{
     background-image: url("https://theme.zdassets.com/theme_assets/1612443/d214b970a5c2a51ac648138ebda4c206924c9dd7.jpg");
     height: 180px;
     padding-top: 120px;
-    margin-top: 20px;
+    margin-top: 120px;
 }
 #outsearch{
     margin: auto;
@@ -18,7 +18,7 @@ body{
     /* border: 2px solid black; */
     background-color: white;
 }
-img{
+#outsearch>img{
    margin-top: 10px;
     width: 20px;
     height: 20px;

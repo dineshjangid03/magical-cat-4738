@@ -40,5 +40,7 @@ Freshly is the leading prepared meal delivery subscription service providing nut
 A Group project build by 4 Developers, executed in 4 Days.
 
 ## Contributers
-[Denish](https://github.com/dineshjangid03)
-[heyabrar](https://github.com/heyabrar)
+[Dinesh Jangid](https://github.com/dineshjangid03)
+[Abrar Khan](https://github.com/heyabrar)
+[Satyam Yadav](https://github.com/iamsatyamyadav)
+[Kapil]()https://github.com/kapil05

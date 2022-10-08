@@ -38,3 +38,5 @@ Freshly is the leading prepared meal delivery subscription service providing nut
 
 
 A Group project build by 4 Developers, executed in 4 Days.
+
+## Contributers
